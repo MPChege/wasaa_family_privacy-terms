@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E2C06A;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+  --gold-border: rgba(201, 168, 76, 0.3);
+  --crimson: #800020;
+  --crimson-light: #9B0025;
+  --bg: #0D1109;
+  --bg-card: #131a0f;
+  --bg-card-2: #1a2414;
+  --border: rgba(255,255,255,0.08);
+  --text-primary: #f0ede6;
+  --text-secondary: rgba(240,237,230,0.75);
+  --text-muted: rgba(240,237,230,0.45);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: rgba(201, 168, 76, 0.3);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 168, 76, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 168, 76, 0.5);
+}
+
+/* Doc card hover */
+.doc-card:hover {
+  border-color: var(--gold-border) !important;
+}
+
+/* Legal document body styles */
+.legal-body p + p {
+  margin-top: 12px;
+}
+
+.legal-body ul {
+  padding-left: 20px;
+  margin: 12px 0;
+}
+
+.legal-body li {
+  margin-bottom: 8px;
+}
+
+.legal-body h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 20px 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.legal-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.legal-body a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
