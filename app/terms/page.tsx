@@ -138,7 +138,7 @@ function Header({ active }: { active: 'privacy' | 'terms' }) {
     <header style={{ position: 'sticky', top: 0, zIndex: 50, borderBottom: '1px solid var(--border)', background: 'rgba(10,15,7,0.92)', backdropFilter: 'blur(16px)' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 32px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Link href="/">
-          <Image src="/logo.png" alt="Wasaa Family" width={120} height={38} style={{ objectFit: 'contain', objectPosition: 'left' }} />
+          <Image src="/logo-dark.png" alt="Wasaa Family" width={120} height={38} style={{ objectFit: 'contain', objectPosition: 'left' }} />
         </Link>
         <nav style={{ display: 'flex', gap: 28 }}>
           <Link href="/privacy" style={{ fontSize: 13, fontWeight: active === 'privacy' ? 600 : 400, color: active === 'privacy' ? 'var(--gold)' : 'var(--text-muted)', textDecoration: 'none' }}>Privacy Policy</Link>

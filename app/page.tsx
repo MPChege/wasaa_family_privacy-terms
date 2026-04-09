@@ -20,7 +20,7 @@ export default function HomePage() {
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 32px', height: 68, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
-            <Image src="/logo.png" alt="Wasaa Family" width={136} height={42} style={{ objectFit: 'contain', objectPosition: 'left' }} />
+            <Image src="/logo-dark.png" alt="Wasaa Family" width={136} height={42} style={{ objectFit: 'contain', objectPosition: 'left' }} />
           </Link>
           <nav style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
             <Link href="/privacy" className="nav-link">Privacy Policy</Link>
@@ -137,7 +137,7 @@ export default function HomePage() {
       {/* ── Footer ── */}
       <footer style={{ borderTop: '1px solid var(--border)', padding: '32px', background: 'rgba(0,0,0,0.2)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-          <Image src="/logo.png" alt="Wasaa Family" width={100} height={32} style={{ objectFit: 'contain', objectPosition: 'left', opacity: 0.55 }} />
+          <Image src="/logo-dark.png" alt="Wasaa Family" width={100} height={32} style={{ objectFit: 'contain', objectPosition: 'left', opacity: 0.55 }} />
           <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>© 2026 Wasaa Family · All rights reserved.</span>
           <div style={{ display: 'flex', gap: 24, fontSize: 13 }}>
             <Link href="/privacy" className="nav-link">Privacy Policy</Link>
